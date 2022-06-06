@@ -25,4 +25,8 @@ export class MainComponent implements OnInit {
     this.message = event.target.value;
   }
 
+  alertMessage(e:any) {
+    alert(e);
+  }
+
 }
