@@ -13,4 +13,16 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeImageKoala() {
+    this.imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/640px-Koala_climbing_tree.jpg";
+  }
+
+  changeImageMapache() {
+    this.imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Procyon_lotor_%28Common_raccoon%29.jpg/1200px-Procyon_lotor_%28Common_raccoon%29.jpg";
+  }
+
+  test(prueba: any) {
+    console.log(prueba);
+  }
+
 }
