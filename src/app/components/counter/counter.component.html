@@ -1,3 +1,7 @@
 <button (click)="resNumber()">-</button>
 <input type="text" value="{{number}}" (keyup)="handleNumber($event)">
 <button (click)="sumNumber()">+</button>
+<div *ngIf="number<6" class="spinner">
+    <app-spinner></app-spinner>
+</div>
+<h3 *ngIf="number>5">Counter es mayor que 5</h3>

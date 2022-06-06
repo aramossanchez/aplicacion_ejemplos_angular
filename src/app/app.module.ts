@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { MainComponent } from './main/main.component';
-import { FooterComponent } from './footer/footer.component';
-import { CounterComponent } from './counter/counter.component';
+import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MainComponent } from './components/main/main.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CounterComponent } from './components/counter/counter.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CounterComponent } from './counter/counter.component';
     HeaderComponent,
     MainComponent,
     FooterComponent,
-    CounterComponent
+    CounterComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
