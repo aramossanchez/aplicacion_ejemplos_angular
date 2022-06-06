@@ -1,4 +1,6 @@
-<p>{{text | uppercase}}</p>
+<p>{{message | uppercase}}</p>
+<input type="message" (keyup)="handleMessage($event)" [value]="message">
+<input [(ngModel)]="message">
 <img src="{{imageUrl}}" alt="Image">
 <button (click)="changeImageKoala()">Cambiar Imagen Koala</button>
 <button on-click="changeImageMapache()">Cambiar Imagen Mapache</button>

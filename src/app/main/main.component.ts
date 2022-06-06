@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
-  text = '<main>';
+  message = '<main>';
   imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Procyon_lotor_%28Common_raccoon%29.jpg/1200px-Procyon_lotor_%28Common_raccoon%29.jpg';
   constructor() { }
 
@@ -21,8 +21,8 @@ export class MainComponent implements OnInit {
     this.imageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Procyon_lotor_%28Common_raccoon%29.jpg/1200px-Procyon_lotor_%28Common_raccoon%29.jpg";
   }
 
-  test(prueba: any) {
-    console.log(prueba);
+  handleMessage(event:any) {
+    this.message = event.target.value;
   }
 
 }
