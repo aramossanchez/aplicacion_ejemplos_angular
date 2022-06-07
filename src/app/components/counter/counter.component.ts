@@ -9,8 +9,10 @@ export class CounterComponent implements OnInit {
 
   number:number = 0;
 
+  exist = true;
+
   currentStyle = {
-    color : this.number === 5 ? 'white' : 'blue',
+    color : this.exist ? 'white' : 'blue',
   }
 
   constructor() { }
@@ -20,7 +22,6 @@ export class CounterComponent implements OnInit {
 
   sumNumber() {
     this.number = this.number + 1;
-    console.log(typeof(this.number))
   }
 
   resNumber() {

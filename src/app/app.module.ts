@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HeroesComponent } from './components/heroes/heroes.component';
     FooterComponent,
     CounterComponent,
     SpinnerComponent,
-    HeroesComponent
+    HeroesComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
