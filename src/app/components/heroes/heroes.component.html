@@ -1,5 +1,6 @@
 <ul class="heroes">
-    <li class="hero" *ngFor="let hero of heroes">
-        {{hero.id}} - {{hero.name}}
+    <li *ngFor="let hero of heroes">
+       <div [ngClass]="currentClasses">{{hero.id}}</div>
+       <div [class.chosen]="elegido">{{hero.name}}</div>
     </li>
 </ul>

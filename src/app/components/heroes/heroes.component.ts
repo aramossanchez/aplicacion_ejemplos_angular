@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroesComponent {
 
+  elegido = true;
+
+  currentClasses = {
+    chosen: this.elegido,
+  };
+
   heroes = [
     { id: 11, name: 'Spiderman'},
     { id: 12, name: 'Thor'},

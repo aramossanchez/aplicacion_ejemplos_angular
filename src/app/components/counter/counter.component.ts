@@ -9,6 +9,10 @@ export class CounterComponent implements OnInit {
 
   number:number = 0;
 
+  currentStyle = {
+    color : this.number === 5 ? 'white' : 'blue',
+  }
+
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +20,7 @@ export class CounterComponent implements OnInit {
 
   sumNumber() {
     this.number = this.number + 1;
+    console.log(typeof(this.number))
   }
 
   resNumber() {
