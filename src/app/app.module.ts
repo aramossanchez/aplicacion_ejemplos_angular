@@ -10,6 +10,7 @@ import { MainComponent } from './components/main/main.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { HeroesComponent } from './components/heroes/heroes.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     MainComponent,
     FooterComponent,
     CounterComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    HeroesComponent
   ],
   imports: [
     BrowserModule,
