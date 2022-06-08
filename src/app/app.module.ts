@@ -12,6 +12,10 @@ import { CounterComponent } from './components/counter/counter.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HighlightDirective } from './highlight.directive';
+import { Kata3Component } from './components/kata3/kata3.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import { ProductFormComponent } from './components/product-form/product-form.component'
 
 @NgModule({
   declarations: [
@@ -23,12 +27,16 @@ import { HighlightDirective } from './highlight.directive';
     CounterComponent,
     SpinnerComponent,
     HeroesComponent,
-    HighlightDirective
+    HighlightDirective,
+    Kata3Component,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

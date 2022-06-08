@@ -1,0 +1,17 @@
+<h1>CREACIÓN DE LISTA DE TAREAS</h1>
+<div class="newTask">
+    <input type="text" placeholder="Nombre de la tarea" [(ngModel)]="taskName" (keyup)="newTaskEnter($event)">
+    <button (click)="newTask()">+ NEW TASK</button>
+</div>
+<div class="taskList">
+    <div [ngClass]="{completed: task.completed, task: true}" *ngFor="let task of taskList">
+        <header>
+            <h3>{{task.name}}</h3>
+            <div class="buttonsTask">
+                <mat-icon class="buttonTask" (click)="setCompleted(task)" *ngIf="!task.completed">event_available</mat-icon>
+                <mat-icon class="buttonTask" (click)="deleteTask(task)">delete_outline</mat-icon>
+            </div>
+        </header>
+        <textarea>{{task.description}}</textarea>
+    </div>
+</div>
