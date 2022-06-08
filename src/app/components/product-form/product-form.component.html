@@ -1,5 +1,8 @@
 <form>
-    <input type="text" name="name" placeholder="Introduce el nombre">
+    <input type="text" name="name" [(ngModel)]="product.name" #name="ngModel" placeholder="Introduce el nombre" required minlength="5">
+    {{name.errors | json}}
+    <span *ngIf="name.errors?.required" class="error_validation">El campo "nombre" es requerido</span>
+    <span *ngIf="name.errors?.minlength" class="error_validation">El campo "nombre" tiene que tener al menos 5 caracteres</span>
     <input type="number" name="price" placeholder="Introduce el precio">
     <button type="submit">Enviar</button>
 </form>

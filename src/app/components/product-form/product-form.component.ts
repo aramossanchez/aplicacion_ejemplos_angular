@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductFormComponent implements OnInit {
 
+  product = {
+    name : '',
+    prize : 0
+  }
+
   constructor() { }
 
   ngOnInit(): void {

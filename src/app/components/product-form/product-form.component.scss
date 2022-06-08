@@ -1,0 +1,13 @@
+:host{
+    .error_validation{
+        color: red;
+        background-color: salmon;
+        border:saddlebrown;
+        padding: 0.75em 1em;
+    }
+    input {
+        &.ng-invalid{
+            border: 2px solid red;
+        }
+    }
+}
