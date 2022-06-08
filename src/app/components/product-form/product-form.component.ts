@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-product-form',
@@ -15,6 +16,10 @@ export class ProductFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(productoForm: NgForm): void {
+    console.log(productoForm);
   }
 
 }

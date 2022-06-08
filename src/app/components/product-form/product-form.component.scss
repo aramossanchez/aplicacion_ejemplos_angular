@@ -10,4 +10,30 @@
             border: 2px solid red;
         }
     }
+    .prettyForm{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        input  {
+            margin: 1em 0;
+            width: 300px;
+            padding: 1em 0.75em;
+            border: 1px solid rgb(190, 190, 190);
+            border-radius: 0.2em;
+            outline: none;
+        }
+        input:focus{
+            background-color: rgb(224, 224, 224);
+        }
+        button {
+            background-color: rgb(47, 47, 201);
+            font-weight: bold;
+            color: white;
+            border-radius: 0.3em;
+            border: 2px solid white;
+            padding: 0.5em 1.5em;
+            cursor: pointer;
+        }
+    }
 }

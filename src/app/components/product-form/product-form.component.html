@@ -6,3 +6,10 @@
     <input type="number" name="price" placeholder="Introduce el precio">
     <button type="submit">Enviar</button>
 </form>
+<form #productoForm="ngForm" class="prettyForm" (ngSubmit)="onSubmit(productoForm)">
+    <input type="text" name="name" ngModel #name="ngModel">
+    <input type="text" name="password" ngModel #password="ngModel">
+    <input type="text" name="email" ngModel #email="ngModel">
+    <button type="submit">Enviar</button>
+</form>
+{{productoForm.value | json}}
